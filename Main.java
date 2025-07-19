@@ -3,7 +3,7 @@
  * The purpose of this class is to contain the main method and coordinate additional method calls.
  *
  * @author Nola Griffin
- * @version 07/14/2025 (Version 2)
+ * @version 07/19/2025 (Version 3)
  */
 import java.util.*;
 public class Main
@@ -17,62 +17,69 @@ public class Main
     public static void main(String [] args)
     {
         //initializing variables
+        boolean anotherGame = true;
+        boolean isAcceptable = false;
         String userInput;
         
         //calling of methods
-        OutputsInputs.printIntro(); 
-        userInput = OutputsInputs.printMenu();
+        userInput = OutputsInputs.intro();
+        while(anotherGame)
+        {   
+            while(!isAcceptable)
+            {
+                 isAcceptable = playGames(userInput);   
+            }
+            
+            //ask the user if they want to play another game
+            System.out.println("Would you like to play a different game?");
+            anotherGame = OutputsInputs.askAnother();
+        }
         
+        OutputsInputs.printOutro();
+        in.close();
     }
     
     //additional methods that help with method calls
     /**
      * Method that takes what the user input and calls the methods to start the corrosponding game.
      */
-    public static void playGames(String userInput)
+    public static boolean playGames(String userInput)
     {
-        //initializing local boolean variable
-        boolean isAcceptable = false;
+        //eliminate capital lowercase differences
+        userInput = userInput.toUpperCase();
         
-        //while loop to determine if the input is acceptable
-        while(isAcceptable == false)
-        {
-            //eliminate capital lowercase differences
-            userInput = userInput.toUpperCase();
-        
-            //if statements to determine which game to play
-            if(userInput.equals("A"))
+        //if statements to determine which game to play
+        if(userInput.equals("A"))
             {
-                isAcceptable = true;
-                System.out.println("Thank you for using the gaming program! Have a nice day!");
+            System.out.println("Thank you for using the gaming program! Have a nice day!");
+            return true;
             }
-            else if(userInput.equals("B"))
+        else if(userInput.equals("B"))
             {
-                isAcceptable = true;
-                System.out.println("I have not added this feature, I am glad that you are excited! It will be added soon ;)");
+            //keeping track of boolean variables 
+            isPrimeGame.mainPrimeGame();
+            return true;
             }
-            else if(userInput.equals("C"))
+        else if(userInput.equals("C"))
             {
-                isAcceptable = true;
-                System.out.println("I have not added this feature, I am glad that you are excited! It will be added soon ;)");
-
+            System.out.println("I have not added this feature, I am glad that you are excited! It will be added soon ;)");
+            return true;
             }
-            else if(userInput.equals("D"))
+        else if(userInput.equals("D"))
             {
-                isAcceptable = true;
-                System.out.println("I have not added this feature, I am glad that you are excited! It will be added soon ;)");
-
+            System.out.println("I have not added this feature, I am glad that you are excited! It will be added soon ;)");
+            return true;
             }
-            else if(userInput.equals("E"))
+        else if(userInput.equals("E"))
             {
-                isAcceptable = true;
-                System.out.println("I have not added this feature, I am glad that you are excited! It will be added soon ;)");
+            System.out.println("I have not added this feature, I am glad that you are excited! It will be added soon ;)");
+            return true;
             }
-            else
+        else
             {
-                System.out.println("There seems to have been a mistake when inputting, please try again.");
-                userInput = OutputsInputs.printMenu();
+            System.out.println("There seems to have been a mistake when inputting, please try again.");
+            return false;
             }
         }
     }
-}
+
