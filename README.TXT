@@ -4,19 +4,33 @@ Project name: Games
 Purpose of project: I decided to make this program for recreational purposes while also retaining my codeing knowledge from my recent
                     AP Computer Science A class that I took. These games are supposed to me small and simple to motivate me to later create
                     bigger projects. 
-                    
+Important Information: This program was made off of the BlueJ Software so it is not runnable on it's own as an application.
+`                      I am not familiar with other softwares yet so I have no idea how the print statements work on other
+                       softwares. (If a window where the print statements can print appears)                    
 
 Additional Notes: 
 - Seperate Programming log detailing all of the different changes for each of the classes.
 - Each log is ordered from most recent to oldest.
-
----------------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------
+Purpose: To add the first game to my gaming program. this game is a prime number game where the user inputs numbers and the computer
+         tells the user if the number is prime or not.
+VERSION or DATE: 07/19/2025 (Version 3)
+                       
+Changes: 
+ - got rid of while statements to simplify code
+ - allows the user to play the prime number game as many times as they want
+ - allows the user the option to switch to a different game
+ - I added an outro for the program thanking the user
+ - I reformatted the intro for readability.
+ - I added the class with the prime number game and all of its methods.
+ 
+Additional Notes: 
+ - There is a bug where the program will crash if you do not enter an integer for the prime number game. I am trying to figure
+   out how to get the computer to check if the inputted string is parsable to an int.
+-----------------------------------------------------------------------------------------------------------------------------
 Purpose: To create the baseline to later build the program for adding mutliple games. Setting up the methods and introduction.
 PURPOSE OF PROJECT: To continue making the Games program for fun, mainly added the ability for the user to input their choice of game.
 VERSION or DATE: 07/14/2025 (Version 2)
-Important Information: This program was made off of the BlueJ Software so it is not runnable on it's own as an application.
-`                      I am not familiar with other softwares yet so I have no idea how the print statements work on other
-                       softwares. (If a window where the print statements can print appears)
                        
 Changes: 
  - I created a userInput variable in both classes to accept the user inputs for their game of choice.
@@ -29,14 +43,11 @@ Changes:
  
 Additional Notes: 
  
-------------------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------
 PROJECT TITLE: Games
 PURPOSE OF PROJECT: To create a fun personal coding project by making traditional easy to code games for fun.
 VERSION or DATE: 07/13/2025 (Version 1)
 AUTHOR: Nola Griffin
-Important Information: This program was made off of the BlueJ Software so it is not runnable on it's own as an application.
-`                      I am not familiar with other softwares yet so I have no idea how the print statements work on other
-                       softwares. (If a window where the print statements can print appears)
                        
 Changes: 
  - I provided the skeleton for the program, making a Main Class and an Outputs Class
@@ -48,5 +59,5 @@ Changes:
  
  Additional Notes: 
  
--------------------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------
 
