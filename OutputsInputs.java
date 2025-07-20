@@ -5,12 +5,8 @@
  * @author Nola Griffin
  * @version 07/19/2025 (Version 3)
  */
-import java.util.*;
-public class OutputsInputs
+public class OutputsInputs extends parentClass
 {
-    //create scanner class variable
-    static Scanner in = new Scanner(System.in);
-
     //Print methods that start off the beginning of the program
     /**
      * This method prints the introduction to the program and instructs the user on how to choose a game.
@@ -61,6 +57,7 @@ public class OutputsInputs
         String userInput = in.next();
         return userInput;
     }
+    
     /**
      * This method simply is a general method meant for all of the games asking the user
      * they want to play the game again.
@@ -98,6 +95,7 @@ public class OutputsInputs
         }
         return another;
     }
+    
     public static void printOutro()
     {
         System.out.println("Thank you for using this gaming program!");

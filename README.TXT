@@ -12,6 +12,24 @@ Additional Notes:
 - Seperate Programming log detailing all of the different changes for each of the classes.
 - Each log is ordered from most recent to oldest.
 -----------------------------------------------------------------------------------------------------------------------------
+Purpose: To add "clean up" some of my messey programming some more before I added another game and fix a minor bug
+VERSION or DATE: 07/20/2025 (Version 4)
+                       
+Changes: 
+ - got rid of the issue of the program asking the user if they wanted to play another game despite the initial quit input when choosing A in the menu.
+ - Changed the name of the class from isPrimeGame to just primeGame for simplicity
+ - added some documentary within the prime number game methods to better understand what each individual method does.
+ - added a parent class so that I would not have to copy and paste every common method between the different games and make multiple Scanner variables
+ - added guess the number game class for setup but no code is in it.
+ 
+Additional Notes: 
+ - There is still the bug where the program will crash if you do not enter an integer for the prime number game. I am trying to figure
+   out how to get the computer to check if the inputted string is parsable to an int.
+ - I had less time to code for this program so I could not get my goal of adding the guess the number game. I settled on code clean up
+   to make making subsequent games easier.
+ - Even though I have the class guessNumber posted, you will still get a message notifying the user that the game isn't available yet
+   because there is not code in the actual guess the number game.
+-----------------------------------------------------------------------------------------------------------------------------
 Purpose: To add the first game to my gaming program. this game is a prime number game where the user inputs numbers and the computer
          tells the user if the number is prime or not.
 VERSION or DATE: 07/19/2025 (Version 3)
