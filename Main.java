@@ -5,11 +5,10 @@
  * @author Nola Griffin
  * @version 07/19/2025 (Version 3)
  */
-import java.util.*;
-public class Main
+public class Main extends parentClass
 {
-    //initializing class scanner variable
-    static Scanner in = new Scanner (System.in);
+    //initializing class isAcceptable variable
+    static boolean anotherGame = true;
     
     /**
      * Main Method
@@ -17,7 +16,6 @@ public class Main
     public static void main(String [] args)
     {
         //initializing variables
-        boolean anotherGame = true;
         boolean isAcceptable = false;
         String userInput;
         
@@ -29,6 +27,9 @@ public class Main
             {
                  isAcceptable = playGames(userInput);   
             }
+            
+            if(!anotherGame)
+                break;
             
             //ask the user if they want to play another game
             System.out.println("Would you like to play a different game?");
@@ -51,18 +52,18 @@ public class Main
         //if statements to determine which game to play
         if(userInput.equals("A"))
             {
-            System.out.println("Thank you for using the gaming program! Have a nice day!");
+            anotherGame = false;
             return true;
             }
         else if(userInput.equals("B"))
             {
             //keeping track of boolean variables 
-            isPrimeGame.mainPrimeGame();
+            primeGame.mainPrimeGame();
             return true;
             }
         else if(userInput.equals("C"))
             {
-            System.out.println("I have not added this feature, I am glad that you are excited! It will be added soon ;)");
+            guessNumber.mainGuessNumber();
             return true;
             }
         else if(userInput.equals("D"))
@@ -81,5 +82,7 @@ public class Main
             return false;
             }
         }
+        
+    
     }
 
