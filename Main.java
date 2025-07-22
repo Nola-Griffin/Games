@@ -3,9 +3,9 @@
  * The purpose of this class is to contain the main method and coordinate additional method calls.
  *
  * @author Nola Griffin
- * @version 07/19/2025 (Version 3)
+ * @version 07/21/2025 (Version 4)
  */
-public class Main extends parentClass
+public class Main extends ParentClass
 {
     //initializing class isAcceptable variable
     static boolean anotherGame = true;
@@ -20,7 +20,7 @@ public class Main extends parentClass
         String userInput;
         
         //calling of methods
-        userInput = OutputsInputs.intro();
+        userInput = Outputs.intro();
         while(anotherGame)
         {   
             while(!isAcceptable)
@@ -32,11 +32,11 @@ public class Main extends parentClass
                 break;
             
             //ask the user if they want to play another game
-            System.out.println("Would you like to play a different game?");
-            anotherGame = OutputsInputs.askAnother();
+            System.out.print("Would you like to play a different game? (Y/N): ");
+            anotherGame = Outputs.askAnother();
         }
         
-        OutputsInputs.printOutro();
+        Outputs.printOutro();
         in.close();
     }
     
@@ -58,12 +58,12 @@ public class Main extends parentClass
         else if(userInput.equals("B"))
             {
             //keeping track of boolean variables 
-            primeGame.mainPrimeGame();
+            PrimeGame.mainPrimeGame();
             return true;
             }
         else if(userInput.equals("C"))
             {
-            guessNumber.mainGuessNumber();
+            GuessNumber.mainGuessNumber();
             return true;
             }
         else if(userInput.equals("D"))
