@@ -4,6 +4,7 @@ Project name: Games
 Purpose of project: I decided to make this program for recreational purposes while also retaining my codeing knowledge from my recent
                     AP Computer Science A class that I took. These games are supposed to me small and simple to motivate me to later create
                     bigger projects. 
+
 Important Information: This program was made off of the BlueJ Software so it is not runnable on it's own as an application.
 `                      I am not familiar with other softwares yet so I have no idea how the print statements work on other
                        softwares. (If a window where the print statements can print appears)                    
@@ -11,6 +12,24 @@ Important Information: This program was made off of the BlueJ Software so it is 
 Additional Notes: 
 - Seperate Programming log detailing all of the different changes for each of the classes.
 - Each log is ordered from most recent to oldest.
+- Additional notes are very informal. Reflections and future plans are put there.
+-----------------------------------------------------------------------------------------------------------------------------
+Purpose: To finish adding the Guess the Number game on the program and make some bug fixes.
+VERSION or DATE: 07/21/2025 (Version 5)
+                       
+Changes: 
+ - got rid of the minor bug where a carriage return is proformed when the user is asked if they wanted to play again.
+ - got rid of the major bug where the program will check if the user's error can be parsable to an int instead of throwing an error.
+ - slightly modified and cleaned up the other methods some more. Some method names were capitalized to match standard programming conventions.
+ - Changed the class name InputsOutputs to just Outputs
+ - Moved the askAnother() method from Outputs to the ParentClass class.
+ - added guess the number game code and documentation so that the game can now be played.
+ 
+Additional Notes: 
+ - I am going to experiment with more sophisticated full stack developement applications instead of relying on the BlueJ output screen for rudimentary formatting. 
+ - I will still be transferring smaller games once in a while. Will transfer Rock Paper Scissors game next.
+ - Chatgpt reminded me that I can do a while(true) loop and utilize break statements. I had forgot about this. I also used chatgpt to solve the problem of not
+   being able to check if the user's input is parsable to an int. Just wanted to site chatgpt for helping me a little on this portion.
 -----------------------------------------------------------------------------------------------------------------------------
 Purpose: To add "clean up" some of my messey programming some more before I added another game and fix a minor bug
 VERSION or DATE: 07/20/2025 (Version 4)
