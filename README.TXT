@@ -14,6 +14,16 @@ Additional Notes:
 - Each log is ordered from most recent to oldest.
 - Additional notes are very informal. Reflections and future plans are put there.
 -----------------------------------------------------------------------------------------------------------------------------
+Purpose: To start adding the Rock Paper Scissors Game.
+VERSION or DATE: 07/29/2025 (Version 6)
+                       
+Changes: 
+ - added the Rock paper Scissors game and some commenting
+ 
+Additional Notes: 
+ - I am going to experiment with more sophisticated full stack developement applications instead of relying on the BlueJ output screen for rudimentary formatting. 
+ - I will still be transferring smaller games once in a while. Will transfer a ceaser cipher game next.
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Purpose: To finish adding the Guess the Number game on the program and make some bug fixes.
 VERSION or DATE: 07/21/2025 (Version 5)
                        
